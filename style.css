@@ -1,0 +1,169 @@
+:root {
+    --cor-verde-retro: #33ff33;  /* Verde mais suave */
+    --cor-preta-retro: #1a1a1a;  /* Preto mais claro para contraste */
+    --cor-branca: #e6e6e6;  /* Branco suave */
+    --cor-botao: #33ff33;   /* Verde claro para os botões */
+    --cor-botao-hover: #66ff66;  /* Efeito de hover mais claro */
+    --cor-texto: #33ff33;
+    --fonte-retro: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: var(--cor-preta-retro);
+    color: var(--cor-branca);
+    font-family: var(--fonte-retro);
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 5%;
+}
+
+.container__caixa {
+    text-align: left;
+}
+
+.container__titulo {
+    font-size: 36px;
+    color: var(--cor-verde-retro);
+    margin-bottom: 20px;
+}
+
+.container__botao {
+    background-color: var(--cor-botao);
+    border: 2px solid var(--cor-verde-retro);
+    padding: 10px 20px;
+    color: var(--cor-preta-retro);
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 0;
+    font-family: var(--fonte-retro);
+    font-size: 18px;
+    text-align: center;
+}
+
+.container__botao:hover {
+    background-color: var(--cor-botao-hover);
+    color: var(--cor-preta-retro);
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--cor-verde-retro);
+    color: var(--cor-verde-retro);
+}
+
+.botao_secundario:hover {
+    background-color: var(--cor-botao-hover);
+    color: var(--cor-preta-retro);
+}
+
+.container__aviso {
+    font-size: 14px;
+    color: var(--cor-verde-retro);
+    margin-top: 20px;
+}
+
+.imagem-principal {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Seção das imagens adicionais */
+.imagens-adicionais {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.imagem-bloco {
+    margin: 0 20px;
+}
+
+.imagem-box {
+    border: 2px solid var(--cor-verde-retro);
+    padding: 10px;
+    text-align: center;
+    background-color: var(--cor-preta-retro);
+    width: 150px;
+}
+
+.imagem-adicional {
+    width: 100px;
+    height: auto;
+}
+
+.imagem-box h3 {
+    color: var(--cor-verde-retro);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Seção dos dispositivos */
+.dispositivos {
+    text-align: center;
+    margin: 3em 0;
+}
+
+.dispositivos__titulo {
+    font-size: 32px;
+    color: var(--cor-verde-retro);
+    margin-bottom: 1.5em;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dispositivos__lista li {
+    margin: 0 20px;
+    text-align: center;
+}
+
+.dispositivos__icone {
+    width: 80px; /* Ajustado para ser um pouco menor */
+    margin-bottom: 10px;
+}
+
+.lista__item {
+    font-size: 20px;
+    color: var(--cor-verde-retro);
+}
+
+.rodape {
+    text-align: center;
+    margin: 2em 0;
+}
+
+.rodape a {
+    color: var(--cor-verde-retro);
+    text-decoration: none;
+}
+
+.rodape a:hover {
+    color: var(--cor-botao-hover);
+}
+
+.rodape p {
+    margin-top: 10px;
+    color: var(--cor-branca);
+}
